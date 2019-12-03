@@ -1,0 +1,10 @@
+target
+**/*.rs.bk
+Cargo.lock
+node_modules
+yarn.lock
+yarn-error.log
+wasm-pack.log
+pkg
+.cache
+tags

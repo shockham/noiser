@@ -1,0 +1,82 @@
+body{
+  margin: 50px;
+}
+
+input[type=button]{
+  border: solid 2px #333;
+  height: 35px;
+  width: 35px;
+  background: transparent;
+}
+
+input[type=range]{
+  display: block;
+  width: 10px;
+  height: 100px;
+
+  margin: auto;
+}
+
+input[type=range].horiz{
+  width: 100px;
+  height: 10px;
+}
+
+input[type=range]::-moz-range-track {
+  width: 15px;
+  height: 100px;
+  background: #fff;
+  border: solid 2px #333;
+}
+input[type=range].horiz::-moz-range-track {
+  width: 100px;
+  height: 15px;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 15px;
+  width: 15px;
+  background: black;
+  border-radius: 0;
+}
+
+input[type=checkbox] {
+  border-radius:0;
+
+  -webkit-appearance:button;
+
+  border: solid 2px #333;
+
+  background-color:#fff;
+  color:#FFF;
+  white-space: nowrap;
+  overflow:hidden;
+
+  width:19px;
+  height:19px;
+
+  margin: auto;
+}
+
+input[type=checkbox]:checked {
+  background-color:#333;
+}
+
+.grid-wrapper{
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-gap: 5px;
+  justify-items: start;
+  justify-self: start;
+  margin: 25px 50px;
+}
+
+.grid-wrapper div{
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.control-title {
+  margin-bottom: 5px;
+}
