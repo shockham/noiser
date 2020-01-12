@@ -13,27 +13,31 @@ input[type=range]{
   display: block;
   width: 10px;
   height: 100px;
-
   margin: auto;
+  -webkit-appearance: slider-vertical;
 }
 
 input[type=range].horiz{
   width: 100px;
   height: 10px;
+  -webkit-appearance: slider-horizontal;
 }
 
-input[type=range]::-moz-range-track {
+input[type=range]::-moz-range-track,
+input[type=range]::-webkit-slider-runnable-track {
   width: 15px;
   height: 100px;
   background: #fff;
   border: solid 2px #333;
 }
-input[type=range].horiz::-moz-range-track {
+input[type=range].horiz::-moz-range-track,
+input[type=range].horiz::-webkit-slider-runnable-track {
   width: 100px;
   height: 15px;
 }
 
-input[type=range]::-moz-range-thumb {
+input[type=range]::-moz-range-thumb,
+input[type=range]::-webkit-slider-thumb {
   border: none;
   height: 15px;
   width: 15px;
